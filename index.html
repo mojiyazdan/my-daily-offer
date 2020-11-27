@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>daily-offer</title>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 600px)"
+      href="./assets/styles(widescreen).css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px)"
+      href="./assets/styles(smallscreen).css"
+    />
+    <script src="./assets/main.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="container" class="container">
+        <div style="width: 100%">
+          <div class="container-flex">
+            <div class="container-flex-1">
+              <div>
+                <h1 style="color: white">
+                  یک تخفیف هیجان انگیز! + ارسال رایگان
+                </h1>
+              </div>
+              <div><p style="color: white">تا سقف 50 هزار تومان</p></div>
+            </div>
+            <div class="container-flex-5">
+              <div class="container-flex-2 time-container eng-font">
+                <p id="discount">
+                  کد تخفیف:
+                  <span id="discount-code" style="color: rgb(52, 52, 255)"
+                    >dailyoff14</span
+                  ><span
+                    ><img
+                      onclick="clickfunc()"
+                      style="cursor: pointer"
+                      src="./assets/images/copy.svg"
+                  /></span>
+                </p>
+                <p id="time">
+                  <span class="time" id="second">0</span><b>:</b>
+                  <span class="time" id="minute">0</span><b>:</b>
+                  <span class="time" id="hour">0</span>
+                </p>
+              </div>
+              <div style="display: flex;flex-direction:row-reverse;">
+                <p style="cursor: pointer" onclick="func()">مشاهده همه</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-1.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">نان مغزدار شکلاتی (کروسان)</h3>
+              <div class="card-description"><h4>غرفه : خانه کیک آیناز</h4></div>
+              <div class="price-offer">
+                <span class="discount">20%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>48,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+
+                <div class="actual-price">
+                  <span class="price-after">36,000</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-2.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">باقلوا اعلا و درجه 1 یزدی</h3>
+              <div class="card-description">
+                <h4>غرفه : شیرینی حاج شهرام یزد</h4>
+              </div>
+              <div class="price-offer">
+                <span class="discount">27%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>54,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+
+                <div class="actual-price">
+                  <span class="price-after">39,500</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-3.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">توت خشک و ارگانیک و محلی ..</h3>
+              <div class="card-description">
+                <h4>غرفه : ادویه و خشکبار نازگل</h4>
+              </div>
+              <div class="price-offer">
+                <span class="discount">16%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>58,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+
+                <div class="actual-price">
+                  <span class="price-after">48,500</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-4.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">رومیزی ترمه بختیاری</h3>
+              <div class="card-description"><h4>غرفه : ترمه النا یزد</h4></div>
+              <div class="price-offer">
+                <span class="discount">34%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>70,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+
+                <div class="actual-price">
+                  <span class="price-after">46,000</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-5.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">زیتون درجه 1 فدک</h3>
+              <div class="card-description">
+                <h4>غرفه : مزرعه زیتون فدک</h4>
+              </div>
+              <div class="price-offer">
+                <span class="discount">6%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>18,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+
+                <div class="actual-price">
+                  <span class="price-after">17,000</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/images/product-6.jpg"
+                alt="نان مغزدار شکلاتی (کروسان)"
+              />
+              <h3 class="card-title">زعفران نگین یک مثقالی</h3>
+              <div class="card-description">
+                <h4>غرفه : محصولات روستایی سبزرود</h4>
+              </div>
+              <div class="price-offer">
+                <span class="discount">34%</span>
+                <span class="price-before" style="margin-left: 6px"
+                  ><del>65,000</del></span
+                >
+              </div>
+              <div class="container-flex-4">
+                <div>
+                  <img
+                    onclick="null"
+                    src="./assets/images/show-more-button-with-three-dots.svg"
+                    style="width: 20px; height: auto; cursor: pointer"
+                  />
+                </div>
+                <div class="actual-price">
+                  <span class="price-after">43,000</span>
+                  <span><img src="./assets/images/toman.svg" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
